@@ -1,0 +1,157 @@
+﻿@model DNA.Models.User
+
+@{
+    ViewData["Title"] = "Dotnet Academy";
+}
+
+
+
+
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-lg-3 ">
+            <div>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-6 col-sm-12">
+            <form class="newsletter-section fw-bold" form asp-controller="Home" asp-action="CreateSubscriber" method="post">
+                <h6>Stay updated with Dotnet Academy! Subscribe to our Newsletter for the latest .NET tips and insights.</h6>
+                <div class="subscribe-container">
+                    <input asp-for="Email" type="email" placeholder="Enter your email" class="subscribe-input" required>
+                    <button class="subscribe-button" type="submit">Subscribe</button>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="col-lg-3">
+            <div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-lg-3 ">
+            <div>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-6 col-sm-12">
+            <div class="NewsLetter_heading mb-2">
+                <h6 class="text-secondary fw-bold">Old Favorites</h6>
+            </div>
+            <div>
+                <a href="https://medium.com/@@imAkash25/hashing-and-salting-passwords-in-c-0ee223f07e20" target="_blank" class="link-preview">
+                    <img src="/Image/Image-3.jpg" alt="Preview Image" />
+                    <div class="link-content">
+                        <div class="link-title">Hashing and Salting Passwords in C#</div>
+                        <div class="link-description">
+                            In the realm of cybersecurity, protecting user passwords is paramount
+                            to safeguarding sensitive information. Hashing and salting are
+                            fundamental techniques employed to enhance the security of stored
+                            passwords.
+                        </div>
+                    </div>
+                </a>
+
+                <br />
+
+                <a href="https://medium.com/@@imAkash25/linqs-select-vs-foreach-why-select-is-the-better-choice-2ded418cd96b" target="_blank" class="link-preview">
+                    <img src="/Image/Image-1.jpg" alt="Preview Image" />
+                    <div class="link-content">
+                        <div class="link-title">
+                            LINQ’s .Select() vs .ForEach(): Why .Select() is the Better Choice
+                        </div>
+                        <div class="link-description">
+                            In the world of C# and .NET, developers often face the decision of how
+                            to iterate over collections and perform operations on their elements.
+                        </div>
+                    </div>
+                </a>
+
+                <br />
+
+                <a href="https://medium.com/@@imAkash25/understanding-sql-in-vs-exists-which-should-you-use-049edc46e8ff" target="_blank" class="link-preview">
+                    <img src="/Image/Image-2.jpg" alt="Preview Image" />
+                    <div class="link-content">
+                        <div class="link-title">
+                            Understanding SQL IN vs. EXISTS: Which Should You Use?
+                        </div>
+                        <div class="link-description">
+                            When working with SQL, one of the most common tasks is to filter data
+                            based on another set of data. Two powerful tools in SQL for this
+                            purpose are the IN and EXISTS operators.
+                        </div>
+                    </div>
+                </a>
+
+
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-3">
+            <div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+
+    // toastr.options = {
+    //     "closeButton": true,
+    //     "debug": false,
+    //     "newestOnTop": false,
+    //     "progressBar": true,
+    //     "positionClass": "toast-bottom-right", // You can change the position
+    //     "preventDuplicates": true,
+    //     "timeOut": "5000",
+    //     "extendedTimeOut": "1000",
+    //     "showMethod": "fadeIn",
+    //     "hideMethod": "fadeOut"
+    // };
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var message = '@ViewBag.Message'; // Razor outputs the message to JS
+        console.log(message);  // For debugging purpose
+
+        if (message) {
+            if (message === "Success") {
+                toastr.success(message);
+            } else {
+                toastr.error(message);
+            }
+        }
+    });
+
+   
+</script>
+
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+
+
+
+
+

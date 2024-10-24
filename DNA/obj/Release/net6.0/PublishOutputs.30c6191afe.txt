@@ -1,0 +1,7 @@
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\DNA.exe
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\DNA.dll
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\DNA.deps.json
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\DNA.runtimeconfig.json
+D:\DNA\project\DNA\DNA\obj\Release\net6.0\PubTmp\Out\DNA.pdb

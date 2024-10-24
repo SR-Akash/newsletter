@@ -1,0 +1,40 @@
+﻿body {
+}
+
+
+
+.header {
+    background-color: #3B5998;
+    color: #fff;
+    padding: 25px 0;
+    border-bottom: 2px solid #A9A9A9;
+}
+
+.sticky-heading {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0; /* Sticks the heading to the top of the page */
+    z-index: 1000; /* Ensures it stays above other content */
+}
+
+
+.col-3 img:last-child {
+    margin-right: 0; /* Removes margin for the last icon DC143C  001F3F*/
+}
+
+.social-icon {
+    text-decoration: none; /* Remove underline from links */
+}
+
+.col-3 a img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.col-3 a:hover img {
+    transform: scale(1.2); /* Increase size by 20% on hover */
+}
+
+
+
+
+
